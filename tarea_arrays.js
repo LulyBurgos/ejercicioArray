@@ -25,7 +25,7 @@ function sumarPares(numeros) {
 // 3.1 Escribe una función llamada `palabrasTerminanConA` que reciba un array de palabras y devuelva `true` si todas terminan con "a", o `false` si al menos una no lo hace.
 function palabrasTerminanConA(palabras) {
     for (let palabra of palabras) {
-        if (palabra.charAt(palabra.length - 1) !=='a') {
+        if(!palabra.endsWith("a")){
             return false
         }
   }
